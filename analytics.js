@@ -1,6 +1,6 @@
 // Název účtu z adresy <název>.goatcounter.com. Prázdná hodnota měření vypíná.
 (() => {
-  const account = '';
+  const account = 'jiridolik';
   if (!account || location.origin !== 'https://dolezal-drone.github.io') return;
 
   const path = location.pathname === '/index.html' ? '/' : location.pathname;
