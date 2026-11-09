@@ -47,3 +47,48 @@
 @media (max-width: 760px) {
   .service-intro, .service-info { grid-template-columns: minmax(0, 1fr); }
 }
+
+.guide-links {
+  display: grid;
+  gap: .65rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+.guide-links a, .guide-related a {
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+.owner-guides {
+  padding: 0 6vw clamp(3rem, 6vw, 5rem);
+}
+.owner-guides h2, .guide h2 {
+  font-size: clamp(1.85rem, 3.5vw, 2.7rem);
+  line-height: 1.1;
+}
+.guide {
+  width: min(90%, 46rem);
+  margin-inline: auto;
+  padding-block: clamp(2.5rem, 6vw, 5rem);
+  font-size: 1.075rem;
+  line-height: 1.65;
+}
+.guide h1 {
+  font-size: clamp(2.6rem, 6vw, 4.75rem);
+  line-height: 1.02;
+  text-wrap: balance;
+  margin: 1rem 0 1.4rem;
+}
+.guide h2 { margin: 2.2rem 0 .7rem; }
+.guide p { margin: .7rem 0; }
+.guide .guide-lead { font-size: 1.18rem; }
+.guide figure { margin: 1.6rem 0; }
+.guide figure img { display: block; width: 100%; height: auto; }
+.guide figcaption { font-size: .875rem; }
+.guide ul { padding-left: 1.3rem; }
+.guide li + li { margin-top: .45rem; }
+.guide .guide-related {
+  border-top: 1px solid var(--line);
+  padding-top: 1.3rem;
+  margin: 2.4rem 0 0;
+}
