@@ -3,3 +3,47 @@
 @media(max-width:520px){header{padding:10px 4vw;min-height:62px}nav{gap:12px;font-size:13px}.outline{padding:6px 10px}.hero{height:67svh;min-height:420px}.grid{grid-template-columns:1fr}.details{display:grid;gap:6px}.heading span{font-size:12px}.eyebrow{font-size:13px;letter-spacing:.08em}.drone{width:17%;top:11%}}
 @media(max-width:420px){header{flex-wrap:wrap;justify-content:center;gap:6px}header nav{justify-content:center;width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.drone{animation:none}.crop img{transition:none}}
+
+.service-link {
+  display: inline-block;
+  margin-top: .65rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+
+.service-intro, .service-info {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 6rem);
+}
+.service-intro { border-top: 1px solid var(--line); }
+.service-intro h1 {
+  font-size: clamp(2.7rem, 5.2vw, 5.7rem);
+  line-height: 1.02;
+  margin: 1rem 0;
+  text-wrap: balance;
+}
+.service-intro p, .service-info p { max-width: 55ch; }
+.service-intro .cta { margin-bottom: 0; }
+.service-intro img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.service-intro figcaption { font-size: .875rem; }
+.service-info {
+  align-items: start;
+  border-top: 1px solid var(--line);
+}
+.service-info h2 {
+  font-size: clamp(2.1rem, 3.5vw, 3.8rem);
+  margin: 0 0 .5em;
+}
+.service-info ul { margin: 0; padding-left: 1.2rem; }
+.service-info li + li { margin-top: .6rem; }
+
+@media (max-width: 760px) {
+  .service-intro, .service-info { grid-template-columns: minmax(0, 1fr); }
+}
